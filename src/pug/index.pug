@@ -1,0 +1,39 @@
+extends layout
+block main 
+	main
+		.section.main-block
+			.container 
+				.main-block__wrap
+					.main-block__head
+						h1.main-block__title Больше <br> чем Детский сад
+						p.main-block__subtitle Доверьте заботу о развитии ваших детей
+						a.btn.btn--default.btn--main-block.open-feedback2 Запишитесь на экскурсию
+			include templates/advantages
+		include templates/offers
+
+		section.section.contacts-block 
+			.container 
+				.section__head 
+					h2.section__title Загородная экология в центре Москвы
+					p.section__subtitle Ул. Староволынская д. 12, корп. 5
+					a.btn.btn--default(href="https://yandex.ru/maps/?rtext=~55.715484,37.479034" target="_blank") Маршрут на Я. Картах
+				.contacts-block__wrap 
+					ul.contacts-block__list 
+						li 
+							p Закрытая территория с охраной, въездом по пропускам<br> и 3-мя детскими площадками, где дважды в день играют <br> и изучают окружающий мир дети
+						li 
+							p В окружении 3-х парков: долины реки Сетунь, Парка Победы<br> и Матвеевского леса. Воздух — как за городом
+						li 
+							p 3-5 минут на машине от Кутузовского проспекта<br> или Аминьевского шоссе
+					.contacts-block__map#map
+						<iframe src="https://yandex.ru/map-widget/v1/org/bolshe_chem_deti_/157108516947/?ll=37.479034%2C55.715485&utm_source=share&z=17.07" style="position:relative;"></iframe>
+
+		include templates/review
+		include templates/teachers
+
+		section.section.reviews#reviews-anchor 
+			.container 
+				.section__head 	
+					h2.section__title 800 выпускников и вот такие честные отзывы их родителей
+				<review-lab data-widgetid="66eef2aeeb335c8a0f9eed26"></review-lab>
+				<script src="https://app.reviewlab.ru/widget/index-es2015.js" defer></script>

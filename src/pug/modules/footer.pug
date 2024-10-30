@@ -1,0 +1,43 @@
+footer.footer 
+	.container
+		.footer__wrap 
+			.footer__aside 
+				a.logo.logo--footer(href="") 
+					img(src='img/logo.webp' alt='логотип')
+				a.footer__politic(href="politica.html") Политика конфиденциальности 
+			.footer__center
+				.footer__nav 
+					a(href="") Детский сад
+					a(href="#navik2") Развивающие занятия
+					a(href="#navik3") Подготовка к школе
+				.footer__nav
+					a(href="#gallery-anchor") Галерея
+					a(href="#contacts-anchor") Контакты
+					a(href="#review-anchor") Отзывы
+				.footer__requisites
+					span ИП Ленков О.А.
+					span ОГРНИП 315774600287164
+					span ИНН 773379177221
+			.footer__contacts#contacts-anchor 
+				a.footer__tel(href="tel:+78003009784" onclick="ym(97904042,'reachGoal','zvonok'); return true;") 
+					img(src='img/tel.svg' alt='')
+					| +7 800 300-97-84
+				.footer__social 
+					a(href="https://vk.com/matveevskiyclubsad " target="_blank")
+						img(src='img/vk.svg' alt='')
+					a(href="https://t.me/babymatveevski" onclick="ym(97904042,'reachGoal','messenger'); return true;" target="_blank")
+						img(src='img/tg.svg' , alt='')
+					a(href="https://api.whatsapp.com/send/?phone=79153455555&text&type=phone_number&app_absent=0" onclick="ym(97904042,'reachGoal','messenger'); return true;" target="_blank")
+						img(src='img/whatsapp.svg' alt='')
+				a.btn.btn--default.btn--footer.open-feedback3 Запишитесь на ознакомительное занятие
+
+button.top-btn
+	img(src='img/arr-up.svg' alt='')
+
+include ../templates/feedbacks
+
+.overlay
+
+.messengers
+	a.widget-whatsapp(href="https://api.whatsapp.com/send/?phone=79153455555&text&type=phone_number&app_absent=0" target="_blank" onclick="ym(97904042,'reachGoal','messenger'); return true;") 
+	a.widget-telegram(href="https://t.me/DetiMatveevskiy " target="_blank" onclick="ym(97904042,'reachGoal','messenger'); return true;")

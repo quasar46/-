@@ -1,0 +1,53 @@
+.main-block {
+	background-image: url("../img/line.svg");
+	background-repeat: no-repeat;
+	background-size: 2218px auto;
+
+	@media(max-width: 1023px) {
+		background-size: 1027px auto;
+	}
+}
+
+.main-block__wrap {
+	margin-bottom: 84px;
+
+	@media(max-width: 1023px) {
+		margin-bottom: 37px;
+	}
+}
+
+.main-block__head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.main-block__title {
+	font-size: 72px;
+	font-weight: 600;
+	margin-bottom: 32px;
+
+	br {
+		display: none;
+
+		@media(max-width: 1023px) {
+			display: block;
+		}
+	}
+
+	@media(max-width: 1023px) {
+		font-size: 32px;
+		margin-bottom: 24px;
+	}
+}
+
+.main-block__subtitle {
+	font-size: 24px;
+	margin-bottom: 42px;
+
+	@media(max-width: 1023px) {
+		font-size: 14px;
+		margin-bottom: 24px;
+	}
+}

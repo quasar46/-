@@ -1,0 +1,118 @@
+.btn {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	cursor: pointer;
+
+	&--header {
+		min-height: 60px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #fff;
+		background-color: var(--color-green);
+		border-radius: 10px;
+		padding: 0 20px;
+		order: 2;
+		text-align: center;
+		// max-width: 237px;
+
+		@media(max-width: 1023px) {
+			min-height: 80px;
+			font-size: 16px;
+		}
+	}
+
+	&--default {
+		font-size: 14px;
+		font-weight: 400;
+		color: #fff;
+		background-color: var(--color-green);
+		border-radius: 10px;
+		padding: 26px 56px;
+	}
+
+	&--footer {
+		font-size: 16px;
+		font-weight: 500;
+		padding-left: 15px;
+		padding-right: 5px;
+		min-height: auto;
+		height: 59px;
+		width: 100%;
+
+		@media(max-width: 1023px) {
+			font-size: 14px;
+			width: 265px;
+			padding: 0 20px;
+		}
+	}
+
+	&--main-block {
+		@media(max-width: 767px) {
+			max-width: 328px;
+			width: 100%;
+			font-size: 18px;
+			padding: 26px 0;
+		}
+	}
+}
+
+/* Стили для кнопки */
+.btn {
+	position: relative;
+	overflow: hidden;
+}
+
+/* Стили для создания блика на кнопке */
+.btn:hover:before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	background-image: linear-gradient(120deg,
+			rgba(255, 255, 255, 0) 30%,
+			/* Прозрачность начала блика */
+			rgba(255, 255, 255, 0.8),
+			/* Цвет блика */
+			rgba(255, 255, 255, 0) 70%
+			/* Прозрачность конца блика */
+		);
+	top: 0;
+	left: -100px;
+	animation: shine 2s infinite linear;
+	/* Анимация блика */
+}
+
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+	0% {
+		left: -100px;
+		/* Начальная позиция блика (левая сторона кнопки) */
+	}
+
+	20% {
+		left: 100%;
+		/* Позиция блика в конце (правая сторона кнопки) */
+	}
+
+	100% {
+		left: 100%;
+		/* Завершение анимации */
+	}
+}
+
+.top-btn {
+	position: fixed;
+	bottom: 150px;
+	right: 50px;
+	background-color: transparent;
+	z-index: 100;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	z-index: 1;
+	@media(max-width: 1023px) {
+		right: 45px;
+		bottom: 230px;
+	}
+}

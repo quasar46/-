@@ -1,0 +1,23 @@
+.page-404 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page-404__error {
+	font-size: 264px;
+	font-weight: 500;
+	display: flex;
+	i {
+		opacity: 0;
+		visibility: hidden;
+		width: 0;
+	}
+	@media(max-width: 767px) {
+		font-size: 100px;
+	}
+}
+
+.page-404__title {
+	margin: 20px 0;
+}
